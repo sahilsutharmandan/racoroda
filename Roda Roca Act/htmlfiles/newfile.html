@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Raco Roda Act</title>
+    <style>
+    #btn-addfile {
+            background-color: blue;
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+        }
+        
+        #circle-select {
+            margin-left: 44px;
+        }
+        
+        #filedate {
+            margin-left: 121px;
+        }
+        
+        #fileyear {
+            margin-left: 123px;
+        }
+        
+        #filename {
+            margin-left: 113px;
+        }
+        
+        #fileaddress {
+            margin-left: 90px;
+        }
+        
+        #filebankname {
+            margin-left: 72px;
+        }
+        
+        #fileamount {
+            margin-left: 96px;
+        }
+        
+        #filechhakname {
+            margin-left: 62px;
+        }
+        
+        #filepatwarname {
+            margin-left: 58px;
+        }
+        
+        #filelanddetails {
+            margin-left: 66px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Raco Roda Act</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/htmlfiles/newfile.html">Add New File</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                गिरदावर 
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hmh.html">हनुमानगढ़ जंक्शन</a></li>
+                                <li><a class="dropdown-item" href="hmo.html">हनुमानगढ़ टाउन</a></li>
+                                <li><a class="dropdown-item" href="pks.html">पक्कासारना  </a></li>
+                                <li><a class="dropdown-item" href="pkb.html">पक्कासारना  </a></li>
+                                <li><a class="dropdown-item" href="dlp.html">धोलीपाल </a></li>
+                                <li><a class="dropdown-item" href="kmn.html">कमाना </a></li>
+                                <li><a class="dropdown-item" href="chl.html">चोहिलावली </a></li>
+                                <li><a class="dropdown-item" href="khl.html">कोहला </a></li>
+                                <li><a class="dropdown-item" href="fth.html">फतेहगढ़ </a></li>
+                                <li><a class="dropdown-item" href="rrw.html">रोड़ावाली </a></li>
+                                <li><a class="dropdown-item" href="ndr.html">नौरंगदेसर </a></li>
+                                <li><a class="dropdown-item" href="dbl.html">डबली </a></li>
+                                <li>
+                                    <a class="dropdown-item" href="hmh.html"> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="hmh.html"> </a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container my-3">
+            <h1>Add a New File</h1>
+            <hr>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Details</h5>
+                    <div class="mb-3">
+                        <form action="">
+                            <label for="circle-select">Choose a Circle:</label>
+
+                            <select name="circles" id="circle-select">
+                                <option value="">--Please choose an option--</option>
+                                <option value="HMH">HMH</option>
+                                <option value="HMO">HMO</option>
+                                <option value="DLP">DLP</option>
+                                <option value="RRW">RRW</option>
+                                <option value="KHL">KHL</option>
+                                <option value="PKS">PKS</option>
+                                <option value="PKB">PKB</option>
+                                <option value="KMN">KMN</option>
+                                <option value="DBL">DBL</option>
+                                <option value="FTH">FTH</option>
+                                <option value="CHL">CHL</option>
+                                <option value="NDR">NDR</option>
+                               
+                            </select>
+                            <br> Date: <input type="date" name="" id="filedate"> <br> Year: <input type="text" name="" id="fileyear"><br> name: <input type="text" id="filename"><br> Addrress: <input type="text" id="fileaddress"> <br>Bank Name:
+                            <input type="text" id="filebankname"> <br>Amount: <input type="number" name="" id="fileamount"> <br>Chhak Name: <input type="text" id="filechhakname"> <br>Patwar Name: <input type="text" id="filepatwarname"> <br>Land Details:
+                            <input type="text" name="" id="filelanddetails">
+                            <br>
+                            <br>
+                            <button id="btn-addfile" type="submit">Add File</button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr>
+        </div>
+    </body>
+    <footer>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center text-muted">© 2021 Company, Inc, Developed by Sahil Suthar</p>
+            </footer>
+        </div>
+    </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script class="src">
+        htmlfiles / newfile.html
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
